@@ -1,0 +1,13 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: aqua;
+}
+
+.ButtonGroup {
+    display: flex;
+    flex-direction: row;
+    
+}
