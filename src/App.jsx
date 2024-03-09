@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 import NavigationBar from './Page Components/NavigationBar/NavigationBar.jsx'
-import HomePage from './Pages/HomePage.jsx'
-import ProfilePage from './Pages/ProfilePage.jsx'
-import ClubsPage from './Pages/ClubsPage.jsx'
+import HomePage from './Pages/Home Page/HomePage.jsx'
+import ProfilePage from './Pages/ProfilePage/ProfilePage.jsx'
+import ClubsPage from './Pages/Clubs Page/ClubsPage.jsx'
 
 
 function App() {

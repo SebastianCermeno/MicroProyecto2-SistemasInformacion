@@ -6,15 +6,15 @@ function NavigationBar() {
     const pageDictionary = new Map([
         ['1', '/'],
         ['2', '/self'],
-        ['3', '/clubs']
+        ['3', '/clubs'],
+        ['4', '/games'],
+        ['']
     ]);
 
     function navigate(pageID) {
         try {
-            console.log("Success")
             navigationController(pageDictionary.get(pageID))
         } catch (error) {
-            console.log("Failed")
         }
     }
     return(
