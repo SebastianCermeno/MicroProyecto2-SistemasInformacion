@@ -22,17 +22,15 @@ function App() {
     measurementId: "G-51XGX9LY5X"
   };
   const app = initializeApp(firebaseConfig);
-
-  const authentication = getAuth(app);
   return (
     <Router>
       <NavigationBar></NavigationBar>
       <Routes>
-        <Route path='/login' element={<LogInPage></LogInPage>}/>
         <Route path='/' element={<HomePage></HomePage>}/>
         <Route path='/self' element={<ProfilePage></ProfilePage>}/>
         <Route path='/clubs' element={<ClubsPage></ClubsPage>}/>
         <Route path='/register' element={<RegisterPage></RegisterPage>}/>
+        <Route path='/login' element={<LogInPage/>}/>
       </Routes>
     </Router>
   )

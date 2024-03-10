@@ -8,7 +8,8 @@ function NavigationBar() {
         ['2', '/self'],
         ['3', '/clubs'],
         ['4', '/games'],
-        ['']
+        ['5', '/login'],
+        ['6', '/register']
     ]);
 
     function navigate(pageID) {
@@ -32,6 +33,9 @@ function NavigationBar() {
                     </button>
                     <button className='NavigationButton' onClick={() => navigate('3')}>
                         To Clubs
+                    </button>
+                    <button className='NavigationButton' onClick={() => navigate('5')}>
+                        Test Login
                     </button>
                 </div>
             </div>
