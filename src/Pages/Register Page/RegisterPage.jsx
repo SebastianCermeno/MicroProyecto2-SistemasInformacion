@@ -1,5 +1,5 @@
 function RegisterPage() {
-    return(
+return(
     <form className="form">
     <h2 className="form__title">Registrarse</h2>
 

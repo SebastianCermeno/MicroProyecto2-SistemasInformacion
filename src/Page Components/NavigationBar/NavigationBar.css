@@ -26,7 +26,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+padding: 0 50px;
 }
 header .logo {
     font-size: 30px;
@@ -34,7 +34,7 @@ header .logo {
 }
 header nav ul {
     display: flex;
-}
+    }
 header nav ul li a {
     display: inline-block;
     color: #000;

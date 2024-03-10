@@ -1,7 +1,7 @@
 import './LogInPage.css'
 
 function LogInPage() {
-    return (
+return (
         <form className="form">
           <h2 className="form__title">Inicia Sesión</h2>
           <p className="form__paragraph">¿Aún no tienes una cuenta? <a href="#" className="form__link">Entra aquí</a></p>
@@ -23,6 +23,6 @@ function LogInPage() {
           </div>
         </form>
       );
-    
+
 }
 export default LogInPage

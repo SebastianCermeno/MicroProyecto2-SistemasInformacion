@@ -6,8 +6,19 @@ import HomePage from './Pages/Home Page/HomePage.jsx'
 import ProfilePage from './Pages/ProfilePage/ProfilePage.jsx'
 import ClubsPage from './Pages/Clubs Page/ClubsPage.jsx'
 
+import { initializeApp } from 'firebase/app'
 
 function App() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyBAwaLMum4Kf1yg16waWF_M6gDKAJijPIw",
+    authDomain: "microproyecto-2-unimet.firebaseapp.com",
+    projectId: "microproyecto-2-unimet",
+    storageBucket: "microproyecto-2-unimet.appspot.com",
+    messagingSenderId: "314563214259",
+    appId: "1:314563214259:web:f717dacfd2e96959fbe9c6",
+    measurementId: "G-51XGX9LY5X"
+  };
+  const app = initializeApp(firebaseConfig)
   return (
     <Router>
       <NavigationBar></NavigationBar>
