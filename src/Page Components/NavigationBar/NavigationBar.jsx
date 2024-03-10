@@ -1,6 +1,7 @@
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 import './NavigationBar.css'
 
+/*
 function NavigationBar() {
     const navigationController = useNavigate()
     const pageDictionary = new Map([
@@ -15,6 +16,7 @@ function NavigationBar() {
         try {
             navigationController(pageDictionary.get(pageID))
         } catch (error) {
+            console.log(error);
         }
     }
     return(
@@ -38,5 +40,42 @@ function NavigationBar() {
         </>
     );
 }
+*/ 
+
+
+
+function NavigationBar() {
+    return (
+        <header>
+            <div className="logo">VideoGames Club</div>
+            <input type="checkbox" id="nav_check" hidden />
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/" className="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="/">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="/">Clubes</a>
+                    </li>
+                    <li>
+                        <a href="/">Juegos</a>
+                    </li>
+                </ul>
+            </nav>
+            <label htmlFor="nav_check" className="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </header>
+    );
+}
 
 export default NavigationBar
+
+
+
+   
