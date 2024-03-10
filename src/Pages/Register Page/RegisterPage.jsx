@@ -1,3 +1,5 @@
+import { initializeApp } from "firebase/app";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { useState } from "react";
 
 function RegisterPage() {
@@ -7,9 +9,21 @@ function RegisterPage() {
   const [email, setEmail] = useState(" ")
   const [password, setPassword] = useState(" ")
 
-  function checkData() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyBAwaLMum4Kf1yg16waWF_M6gDKAJijPIw",
+    authDomain: "microproyecto-2-unimet.firebaseapp.com",
+    projectId: "microproyecto-2-unimet",
+    storageBucket: "microproyecto-2-unimet.appspot.com",
+    messagingSenderId: "314563214259",
+    appId: "1:314563214259:web:f717dacfd2e96959fbe9c6",
+    measurementId: "G-51XGX9LY5X"
+  };
+  const app = initializeApp(firebaseConfig);
+  const authentication = getAuth(app);
+  const newUser = async() => {
     event.preventDefault()
-    alert(personName+secondName+userName+email+password)
+    const credentials = await createUserWithEmailAndPassword(authentication, email, password)
+    alert(credentials.user)
   }
 return(
     <form className="form">
@@ -46,7 +60,7 @@ return(
         <span className="form__line"></span>
       </div>
 
-      <button type="submit" className="form__submit" value="Registrarse" onClick={() => checkData()}>
+      <button type="submit" className="form__submit" value="Registrarse" onClick={newUser}>
         Registrarse
       </button>
     </div>
