@@ -10,6 +10,7 @@ import ClubsPage from './Pages/Clubs Page/ClubsPage.jsx'
 
 import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
+import { getFirestore } from 'firebase/firestore'
 
 function App() {
   const firebaseConfig = {
@@ -22,13 +23,15 @@ function App() {
     measurementId: "G-51XGX9LY5X"
   };
   const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const firestore = getFirestore();
   return (
     <Router>
       <NavigationBar></NavigationBar>
       <Routes>
         <Route path='/' element={<HomePage></HomePage>}/>
         <Route path='/self' element={<ProfilePage></ProfilePage>}/>
-        <Route path='/clubs' element={<ClubsPage></ClubsPage>}/>
+        <Route path='/clubs' element={<ClubsPage firestore={firestore}/>}/>
         <Route path='/register' element={<RegisterPage></RegisterPage>}/>
         <Route path='/login' element={<LogInPage/>}/>
       </Routes>

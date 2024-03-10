@@ -1,8 +1,20 @@
-function ClubsPage(){
+import {getDoc, doc} from 'firebase/firestore'
+
+function ClubsPage({firestore}){
+    const club = doc(firestore,'Clubes/Club de Estrategia')
+    async function readDoc() {
+        const snapshot = await getDoc(club)
+        if (snapshot.exists()) {
+            alert('yippee')
+        }
+        else {
+            alert('not yippee')
+        }
+    }
     return(
-        <h1>
-            Club Page
-        </h1>
+        <button onClick={() => readDoc()}>
+            pause
+        </button>
     )
 }
 
