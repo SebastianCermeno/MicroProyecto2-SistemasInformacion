@@ -27,6 +27,7 @@ function App() {
   const firestore = getFirestore();
   return (
     <Router>
+      <div>
       <NavigationBar></NavigationBar>
       <Routes>
         <Route path='/' element={<HomePage></HomePage>}/>
@@ -35,6 +36,7 @@ function App() {
         <Route path='/register' element={<RegisterPage></RegisterPage>}/>
         <Route path='/login' element={<LogInPage/>}/>
       </Routes>
+      </div>
     </Router>
   )
 }
