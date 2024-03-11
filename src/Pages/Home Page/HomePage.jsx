@@ -25,6 +25,7 @@ function HomePage() {
                         </p>
                     </div>
                 </div>
+                <img className='Background' src="../../src/assets/FirstBackgroundWebPage.png" alt="" />
             </div>
             <div className="Content2">
                 <h2 className='SubTitle2'>

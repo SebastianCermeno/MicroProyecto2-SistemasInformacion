@@ -3,28 +3,13 @@
     display: flex;
     flex-direction: column;
     margin: 1vw;
-    height: 50vw;
-    width: 85vw;
 }
-
-.SectionContainer1:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background-image: url('../../src/assets/FirstBackgroundWebPage.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-  }
 
 .Content1{
     display: flex;
     flex-direction: column;
+    width: 85vw;
+    z-index: 1;
 }
 
 .SubTitle1{
@@ -50,4 +35,9 @@
 .SecondContentBody{
     display: flex;
     flex-direction: row-reverse;
+}
+
+.Background{
+    z-index: -1;
+    position: absolute;
 }
