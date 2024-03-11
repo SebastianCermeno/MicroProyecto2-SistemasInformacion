@@ -1,3 +1,11 @@
+.AllGroup{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
+}
+
 .SectionContainer1{
     position: relative;
     display: flex;
@@ -8,8 +16,10 @@
 .Content1{
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 100%;
+    height: 50vh;
     z-index: 1;
+    align-items: center;
 }
 
 .SubTitle1{
@@ -26,6 +36,7 @@
     flex-direction: column;
 
     margin: 1vw;
+    z-index: 1;
 }
 
 .SubTitle2{
@@ -44,7 +55,17 @@
     z-index: -1;
     opacity: 0.5;
     position: absolute;
-    width: 85vw;
-    max-height: 50vh;
+    width: 100vw;
+    height: 50vh;
     overflow: hidden;
+}
+
+.descriptiveText1{
+    font-size: 3vh;
+    text-justify: right;
+}
+
+.descriptiveText2{
+    font-size: 3vh;
+    text-justify: left;
 }
