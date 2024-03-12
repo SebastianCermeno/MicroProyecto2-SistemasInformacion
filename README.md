@@ -1,5 +1,5 @@
 # Micro Proyecto 2
-(Descripción y objetivos del Micro Proyecto)
+Pese a muchos esfuerzos, no se logró el objetivo de desarrollo. Se deja en este repositorio todo el código y elementos de diseño, por poco que valgan.
 
 # Tecnología: Vite + React
 
